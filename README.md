@@ -1,24 +1,30 @@
-# UTMB Performance Prediction
+# 🏔️ UTMB Performance Prediction
 
-**Objective**: Predict runners’ pace or finish time in UTMB using historical race data.
+**Objective**: Predict runners’ pace or finish time in UTMB (Ultra-Trail du Mont-Blanc) events using historical data from global trail races.
 
-## 📥 Data
-- `utmb_2017.csv`: dataset complet
+## 📥 Dataset
+- `utmb_2017.csv`: public dataset containing ~7 million runners across 38,000 races.
+- Includes features like distance, elevation gain, finish time, age, and more.
 
-## 🧪 Tasks
-1. Data cleaning & feature engineering (distance, elevation, segment times).
-2. Exploratory Data Analysis (EDA): visualitzar distribució de temps, desnivells i estratègies.
-3. Model ML: regressió amb XGBoost o Random Forest.
-4. Visualització: gràfiques comparatives de prediccions vs reals.
+## 🔍 Project Tasks
+1. **Data Cleaning & Feature Engineering**
+   - Normalize units, remove outliers, create pace and effort metrics.
+2. **Exploratory Data Analysis (EDA)**
+   - Visualize distributions of finish times, elevation vs pace, age vs performance.
+3. **Machine Learning Modeling**
+   - Train regression models (XGBoost, Random Forest, or Ridge) to predict performance.
+4. **Visual Insights**
+   - Compare predicted vs actual finish times and segment pace breakdowns.
 
-## 🛠️ Tecnologies
-- Python: pandas, scikit-learn, xgboost, matplotlib, seaborn
-- Notebooks i GitHub per estructurar i documentar
+## 🛠️ Tools & Tech
+- Python: `pandas`, `scikit-learn`, `xgboost`, `matplotlib`, `seaborn`
+- Jupyter Notebooks
+- GitHub for versioning and presentation
 
-## 🚀 Com utilitzar
-- Executa `01_data_exploration.ipynb` per veure neteja i EDA
-- Executa `02_modeling.ipynb` per entrenar i validar models
+## 🚀 How to Use
+1. Run `notebooks/01_data_exploration.ipynb` to load and explore data.
+2. Run `notebooks/02_modeling.ipynb` to train and evaluate models.
 
-## 🌟 Resultats esperats
-- RMSE i R²
-- Comparativa gràfica
+## 📊 Expected Outputs
+- RMSE / R² performance metrics
+- Graphs: actual vs predicted times, pace heatmaps, elevation profiles
